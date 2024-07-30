@@ -1,0 +1,20 @@
+[
+    {
+        "img": "catalog-veda-vfd",
+        "title": "Каталог преобразователей частоты VEDA VFD",
+        "desc": "Каталог PDF (6,79 Mb)",
+        "link": "https://vlt-danfoss.ru/files/Catalog-PCH-VEDA-VFD.pdf"
+    },
+    {
+        "img": "catalog-veda-vf-51",
+        "title": "Руководство по эксплуатации VF-51",
+        "desc": "Инструкция PDF (5,48 Mb)",
+        "link": "https://vlt-danfoss.ru/files/Rukovodstvo-po-ekspluatacii-PCH-VEDA-VFD-VF-51.pdf"
+    },
+    {
+        "img": "catalog-veda-vf-101",
+        "title": "Руководство по эксплуатации VF-101",
+        "desc": "Инструкция PDF (7,03 Mb)",
+        "link": "https://vlt-danfoss.ru/files/Rukovodstvo-po-ekspluatacii-PCH-VEDA-VFD-VF-101.pdf"
+    }
+]

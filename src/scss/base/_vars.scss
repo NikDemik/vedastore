@@ -1,0 +1,26 @@
+:root {
+	--container-width: 1364px;
+	--container-padding: 32px;
+
+	// --font-main: sans-serif;
+	--font-lato: 'Lato', sans-serif;
+	--font-jost: 'Jost', sans-serif;
+	--font-titles: var(--font-jost);
+
+	--page-bg: #fff;
+	--bg-color: #EDF1F3;
+	--text-color: #272727;
+	--accent: red;
+	// --accent: #72AEC8;
+	--link-color: #272727;
+
+
+	// --laptop-size: 1199px;
+	--tablet-size: 1200px;
+	--mobile-size: 820px;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}

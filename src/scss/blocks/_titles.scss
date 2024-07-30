@@ -1,0 +1,69 @@
+.title {
+	@include mobile {
+		margin-bottom: 20px;
+	}
+}
+
+.title__link {
+	display: inline-flex;
+	gap: 4px;
+	align-items: center;
+
+	padding-bottom: 2px;
+
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 148%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	border-bottom: 3px solid #e1e1e1;
+
+	@include tablet {
+		font-size: 12px;
+	}
+}
+
+.title-1 {
+	font-family: var(--font-titles);
+	font-size: 80px;
+	line-height: 114%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+
+	@include tablet {
+		font-size: 54px;
+	}
+
+	@include mobile {
+		font-size: 32px;
+		text-align: center;
+	}
+}
+
+.title-2 {
+	font-family: var(--font-titles);
+	font-size: 30px;
+	line-height: 114%;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	@include mobile {
+		font-size: 24px;
+		text-align: center;
+	}
+}
+
+.title-3 {
+	margin: 1em 0 0.5em;
+	font-size: 26px;
+	font-weight: 700;
+	font-family: var(--font-titles);
+}
+
+.title-4 {
+	margin: 1em 0 0.5em;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: var(--font-titles);
+}

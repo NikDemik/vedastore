@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /css
+Disallow: /files
+Disallow: /fonts
+Disallow: /img
+Disallow: /js
+Disallow: /*?*
+Disallow: /?s=
+ 
+User-agent: Yandex
+Disallow: /css
+Disallow: /files
+Disallow: /fonts
+Disallow: /img
+Disallow: /js
+Disallow: /*?*
+Disallow: /?s=
+Host: drives.com.ru
+ 
+Sitemap: https://drives.com.ru/sitemap.xml

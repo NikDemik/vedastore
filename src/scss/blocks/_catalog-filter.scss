@@ -1,0 +1,137 @@
+.catalog-filters {
+    width: 290px;
+    height: 1010px;
+    margin-right: 40px;
+}
+
+.catalog-filter {}
+
+.catalog-filter--open {
+    .catalog-filter__bottom {
+        display: block;
+    }
+
+    .catalog-filter__toggle {
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.catalog-filter__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.catalog-filter__title {
+    display: inline-block;
+    font-family: var(--font-jost);
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--text-color);
+}
+
+.catalog-filter__toggle {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    color: #3a3a3a;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: currentColor;
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+        transform: translateY(-50%);
+    }
+}
+
+.catalog-filter__bottom {
+    display: none;
+}
+
+.catalog-filter__items {}
+
+.catalog-filter__item {
+    margin-bottom: 8px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.custom-checkbox {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-checkbox__input {
+    &:checked+span {
+        color: var(--accent);
+
+        &::after {
+            display: block;
+        }
+    }
+}
+
+.custom-checkbox__text {
+    position: relative;
+    padding-left: 24px;
+    font-size: 16px;
+    line-height: 138%;
+    letter-spacing: 0.03em;
+    color: #3a3a3a;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1px;
+        border: 2px solid #3a3a3a;
+        width: 18px;
+        height: 18px;
+    }
+
+    &::after {
+        content: "\2713";
+        display: none;
+        position: absolute;
+        left: 2px;
+        top: 0;
+        // content: '';
+        // position: absolute;
+        // // display: none;
+        // left: 6px;
+        // top: 4px;
+        // width: 5px;
+        // height: 12px;
+        // border: solid #000;
+        // border-width: 0 2px 2px 0;
+        // transform: rotate(45deg);
+    }
+}

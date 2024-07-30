@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2024-07-24T09:00:38+07:00">
+    <shop>
+        <name>Alpark</name>
+        <company>Alpark</company>
+        <url>http://drives.com.ru</url>
+        <!-- <platform>uCoz</platform> -->
+        <categories>
+            <category id="1">Преобразователи частоты VEDA</category>
+            <category id="10" parentId="1">Преобразователи частоты VEDA серии VF-51</category>
+            <category id="20" parentId="1">Преобразователи частоты VEDA серии VF-101</category>
+        </categories>
+        <!-- <delivery-options>
+            <option cost="200" days="1"/>
+        </delivery-options>
+        <pickup-options>
+            <option cost="200" days="1"/>
+        </pickup-options> -->
+        <offers>
+            <offer id="9012">
+                <name>Преобразователь частоты VEDA ABA00005</name>
+                <vendor>VEDA</vendor>
+                <vendorCode>ABA00005</vendorCode>
+                <url>http://best.seller.ru/product_page.asp?pid=12345</url>
+                <price>15400</price>
+                <oldprice>9990</oldprice>
+                <enable_auto_discounts>true</enable_auto_discounts>
+                <currencyId>RUR</currencyId>
+                <categoryId>101</categoryId>
+                <picture>http://best.seller.ru/img/model_12345.jpg</picture>
+                <description>
+                    <![CDATA[
+                        <p>Это прибор, который придётся по вкусу всем любителям десертов и сладостей</p>
+                        <p>С его помощью вы сможете делать вкусное домашнее мороженое из натуральных ингредиентов.</p>
+                    ]]>
+                </description>
+                <sales_notes>Необходима предоплата.</sales_notes>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <barcode>4601546021298</barcode>
+                <param name="Цвет">белый</param>
+                <weight>3.6</weight>
+                <dimensions>20.1/20.551/22.5</dimensions>
+                <condition type="preowned">
+                    <quality>excellent</quality>
+                </condition>
+            </offer>
+        </offers>
+    </shop>
+</yml_catalog>

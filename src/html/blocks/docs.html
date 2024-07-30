@@ -1,0 +1,18 @@
+<section class="docs" id="docs">
+    <div class="container">
+        <div class="docs__row">
+            <div class="docs__title title">
+                <h2 class="title-2">Каталоги и документация</h2>
+            </div>
+            <!-- <a href="#!" class="docs__link title__link">Смотреть все
+                <img src="./img/icons/arrow-right-black.svg" alt="Arrow">
+            </a> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="docs__content">
+            @@loop('templates/doc.html', 'data/docs.json')
+        </div>
+    </div>
+</section>

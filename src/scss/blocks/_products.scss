@@ -1,0 +1,28 @@
+.products {
+    padding-bottom: 120px;
+
+    @include mobile {
+        padding-bottom: 32px;
+    }
+}
+
+.products__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+    @include mobile {
+        justify-content: center;
+        // flex-wrap: wrap;
+        margin-bottom: 40px;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+.products__slider {
+    display: flex;
+    gap: 20px;
+}

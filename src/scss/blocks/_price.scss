@@ -1,0 +1,95 @@
+.price {
+    height: 600px;
+    // background-color: #D7DDDF;
+    background-color: var(--bg-color);
+
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+        height: 500px;
+    }
+
+    @include mobile {
+        padding: 40px 0;
+        height: auto;
+    }
+}
+
+.price__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+// .price__text {
+//     padding: 152px 0 152px 20px;
+// }
+
+.price__title {
+    font-family: var(--font-jost);
+
+    font-size: 60px;
+    line-height: 114%;
+    letter-spacing: 0.02em;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    @include tablet {
+        font-size: 60px;
+    }
+
+    @include mobile {
+        font-size: 34px;
+    }
+
+    span {
+        color: var(--accent);
+    }
+
+}
+
+.price__desc {
+    font-family: var(--font-jost);
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 1.6;
+
+    text-align: center;
+
+    @include mobile {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+.price__image {
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.price__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price__phone {
+    padding-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+    // color: var(--accent);
+    text-align: center;
+}
+
+.price__mail {
+    font-size: 34px;
+    font-weight: 600;
+    // color: var(--accent);
+    text-align: center;
+}

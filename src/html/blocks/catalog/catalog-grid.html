@@ -1,0 +1,21 @@
+<section class="catalog-grid">
+
+    <div class="catalog-grid__top">
+        <div class="catalog-grid__sort">
+            <div class="custom-select__top">По умолчанию</div>
+            <div class="custom-select__dropdown">
+                <ul class="custom-select__list">
+                    <li class="custom-select__item">По умолчанию</li>
+                    <li class="custom-select__item">По названию</li>
+                    <li class="custom-select__item">По цене</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog-grid__content">
+        @@loop('./../templates/card.html', './data/vf-51.json')
+        @@loop('./../templates/card.html', './data/vf-101.json')
+    </div>
+
+</section>
