@@ -15,6 +15,6 @@ Disallow: /img
 Disallow: /js
 Disallow: /*?*
 Disallow: /?s=
-Host: drives.com.ru
+Host: ddrives-vfd.ru
  
-Sitemap: https://drives.com.ru/sitemap.xml
+Sitemap: https://drives-vfd.ru/sitemap.xml

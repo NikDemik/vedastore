@@ -14,14 +14,16 @@
 	display: flex;
 	gap: 4px;
 	align-items: center;
+
 	a {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 	}
-		span {
-			font-size: 14px;
-		}
+
+	span {
+		font-size: 14px;
+	}
 }
 
 .header__btn-mobile-header {
@@ -65,6 +67,10 @@
 	@include tablet {
 		font-size: 12px;
 	}
+}
+
+.main-link:hover {
+	color: var(--accent);
 }
 
 .header__contacts {

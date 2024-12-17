@@ -32,23 +32,23 @@
 					<nav class="header__nav">
 						<ul class="header__nav-list">
 							<li class="header__nav-item">
-								<a href="index.html" class="header__link header__link--current">Главная</a>
+								<a href="index.html" class="header__link main-link header__link--current">Главная</a>
 							</li>
 							<li class="header__nav-item">
-								<a href="catalog.html" class="header__link"
+								<a href="catalog.html" class="main-link header__link"
 									>Товары
 									<!-- <img src="./img/icons/chevron-down.svg"
                                 alt="arrow"> -->
 								</a>
 							</li>
 							<li class="header__nav-tem">
-								<a href="index.html#about" class="header__link">О&#160;нас</a>
+								<a href="index.html#about" class="main-link header__link">О&#160;нас</a>
 							</li>
 							<li class="header__nav-item">
-								<a href="price.html" class="header__link" target="_blank">Стоимость</a>
+								<a href="price.html" class="main-link header__link" target="_blank">Стоимость</a>
 							</li>
 							<li class="header__nav-item">
-								<a href="index.html#contact" class="header__link">Контакты</a>
+								<a href="index.html#contact" class="main-link header__link">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -261,9 +261,19 @@
 							</div>
 						</div>
 						<section class="catalog-grid">
-							<div class="catalog-grid__top">
-								<div class="catalog-grid__sort">
-									<div class="custom-select__top">По&#160;умолчанию</div>
+							<div class="catalog-grid__props catalog-props">
+								<div class="catalog-props__top">
+									<div class="catalog-props__columns catalog-columns">
+										<span class="catalog-columns__text">Количество колонок:</span>
+										<ul class="catalog-columns__list">
+											<li class="catalog-columns__item">
+												<button class="btn-reset main-link catalog-columns__btn catalog-columns__btn--current" data-columns="3">3</button>
+											</li>
+											<li class="catalog-columns__item">
+												<button class="btn-reset main-link catalog-columns__btn" data-columns="4">4</button>
+											</li>
+										</ul>
+									</div>
 									<div class="custom-select__dropdown">
 										<ul class="custom-select__list">
 											<li class="custom-select__item">По&#160;умолчанию</li>
@@ -274,827 +284,924 @@
 								</div>
 							</div>
 
-							<div class="catalog-grid__content">
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-PK75-0004-S2-E20-B-H, 0,75кВт, 220В, IP20 ABA00002"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+							<ul class="catalog-grid__content" data-grid-columns="3">
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-PK75-0004-S2-E20-B-H, 0,75кВт, 220В, IP20 ABA00002"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-PK75-0004-S2-E20-B-H, 0,75кВт, 220В, IP20 ABA00002</h3>
-										<div class="card__price">11 338 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P1K5-0007-S2-E20-B-H, 1,5кВт, 220В, IP20 ABA00003"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-PK75-0004-S2-E20-B-H, 0,75кВт, 220В, IP20 ABA00002</h3>
+											<div class="card__price">11 338 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P1K5-0007-S2-E20-B-H, 1,5кВт, 220В, IP20 ABA00003</h3>
-										<div class="card__price">13 015 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P2K2-0010-S2-E20-B-H, 2,2кВт, 220В, IP20 ABA00004"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P1K5-0007-S2-E20-B-H, 1,5кВт, 220В, IP20 ABA00003"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P2K2-0010-S2-E20-B-H, 2,2кВт, 220В, IP20 ABA00004</h3>
-										<div class="card__price">15 847 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-PK75-0003-T4-E20-B-H, 0,75кВт, 380В, IP20 ABA00005"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P1K5-0007-S2-E20-B-H, 1,5кВт, 220В, IP20 ABA00003</h3>
+											<div class="card__price">13 015 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-PK75-0003-T4-E20-B-H, 0,75кВт, 380В, IP20 ABA00005</h3>
-										<div class="card__price">15 482 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P1K5-0004-T4-E20-B-H, 1,5кВт, 380В, IP20 ABA00006"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P2K2-0010-S2-E20-B-H, 2,2кВт, 220В, IP20 ABA00004"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P1K5-0004-T4-E20-B-H, 1,5кВт, 380В, IP20 ABA00006</h3>
-										<div class="card__price">15 847 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P2K2-0005-T4-E20-B-H, 2,2кВт, 380В, IP20 ABA00007"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P2K2-0010-S2-E20-B-H, 2,2кВт, 220В, IP20 ABA00004</h3>
+											<div class="card__price">15 847 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P2K2-0005-T4-E20-B-H, 2,2кВт, 380В, IP20 ABA00007</h3>
-										<div class="card__price">16 636 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P4K0-0009-T4-E20-B-H, 4кВт, 380В, IP20 ABA00008"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-PK75-0003-T4-E20-B-H, 0,75кВт, 380В, IP20 ABA00005"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P4K0-0009-T4-E20-B-H, 4кВт, 380В, IP20 ABA00008</h3>
-										<div class="card__price">19 102 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P5K5-0013-T4-E20-B-H, 5,5кВт, 380В, IP20 ABA00009"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-PK75-0003-T4-E20-B-H, 0,75кВт, 380В, IP20 ABA00005</h3>
+											<div class="card__price">15 482 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P5K5-0013-T4-E20-B-H, 5,5кВт, 380В, IP20 ABA00009</h3>
-										<div class="card__price">22 880 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P7K5-0017-T4-E20-B-H, 7,5кВт, 380В, IP20 ABA00010"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P1K5-0004-T4-E20-B-H, 1,5кВт, 380В, IP20 ABA00006"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P7K5-0017-T4-E20-B-H, 7,5кВт, 380В, IP20 ABA00010</h3>
-										<div class="card__price">29 077 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P11K-0025-T4-E20-B-H, 11кВт, 380В, IP20 ABA00011"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P1K5-0004-T4-E20-B-H, 1,5кВт, 380В, IP20 ABA00006</h3>
+											<div class="card__price">15 847 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P11K-0025-T4-E20-B-H, 11кВт, 380В, IP20 ABA00011</h3>
-										<div class="card__price">36 476 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P15K-0032-T4-E20-B-H, 15кВт, 380В, IP20 ABA00012"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P2K2-0005-T4-E20-B-H, 2,2кВт, 380В, IP20 ABA00007"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P15K-0032-T4-E20-B-H, 15кВт, 380В, IP20 ABA00012</h3>
-										<div class="card__price">49 856 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P18K-0038-T4-E20-B-H, 18,5кВт, 380В, IP20 ABA00013"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P2K2-0005-T4-E20-B-H, 2,2кВт, 380В, IP20 ABA00007</h3>
+											<div class="card__price">16 636 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P18K-0038-T4-E20-B-H, 18,5кВт, 380В, IP20 ABA00013</h3>
-										<div class="card__price">52 688 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-51.jpg"
-												srcset="./img/products/vf-51@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-51-P22K-0045-T4-E20-B-H, 22кВт, 380В, IP20 ABA00014"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P4K0-0009-T4-E20-B-H, 4кВт, 380В, IP20 ABA00008"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P22K-0045-T4-E20-B-H, 22кВт, 380В, IP20 ABA00014</h3>
-										<div class="card__price">66 493 руб</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-PK75-0003-A-T4-E20-B-H, 0,75кВт, 380В, IP20 ABC00023"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P4K0-0009-T4-E20-B-H, 4кВт, 380В, IP20 ABA00008</h3>
+											<div class="card__price">19 102 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-PK75-0003-A-T4-E20-B-H, 0,75кВт, 380В, IP20 ABC00023</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P1K5-0004-A-T4-E20-B-H, 1,5кВт, 380В, IP20 ABC00024"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P5K5-0013-T4-E20-B-H, 5,5кВт, 380В, IP20 ABA00009"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P1K5-0004-A-T4-E20-B-H, 1,5кВт, 380В, IP20 ABC00024</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P2K2-0006-A-T4-E20-B-H, 2,2кВт, 380В, IP20 ABC00025"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P5K5-0013-T4-E20-B-H, 5,5кВт, 380В, IP20 ABA00009</h3>
+											<div class="card__price">22 880 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P2K2-0006-A-T4-E20-B-H, 2,2кВт, 380В, IP20 ABC00025</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P5K5-0013-A-T4-E20-B-H, 5,5кВт, 380В, IP20 ABC00027"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P7K5-0017-T4-E20-B-H, 7,5кВт, 380В, IP20 ABA00010"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P5K5-0013-A-T4-E20-B-H, 5,5кВт, 380В, IP20 ABC00027</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P7K5-0017-A-T4-E20-B-H, 7,5кВт, 380В, IP20 ABC00028"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P7K5-0017-T4-E20-B-H, 7,5кВт, 380В, IP20 ABA00010</h3>
+											<div class="card__price">29 077 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P7K5-0017-A-T4-E20-B-H, 7,5кВт, 380В, IP20 ABC00028</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P11K-0025-A-T4-E20-B-H, 11кВт, 380В, IP20 ABC00029"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P11K-0025-T4-E20-B-H, 11кВт, 380В, IP20 ABA00011"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P11K-0025-A-T4-E20-B-H, 11кВт, 380В, IP20 ABC00029</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P15K-0032-A-T4-E20-B-H, 15кВт, 380В, IP20 ABC00030"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P11K-0025-T4-E20-B-H, 11кВт, 380В, IP20 ABA00011</h3>
+											<div class="card__price">36 476 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P15K-0032-A-T4-E20-B-H, 15кВт, 380В, IP20 ABC00030</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P18K-0038-A-T4-E20-B-H, 18кВт, 380В, IP20 ABC00031"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P15K-0032-T4-E20-B-H, 15кВт, 380В, IP20 ABA00012"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P18K-0038-A-T4-E20-B-H, 18кВт, 380В, IP20 ABC00031</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P22K-0045-A-T4-E20-B-H, 22кВт, 380В, IP20 ABC00032"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P15K-0032-T4-E20-B-H, 15кВт, 380В, IP20 ABA00012</h3>
+											<div class="card__price">49 856 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P22K-0045-A-T4-E20-B-H, 22кВт, 380В, IP20 ABC00032</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P30K-0060-A-T4-E20-B-H, 30кВт, 380В, IP20 ABC00033"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P18K-0038-T4-E20-B-H, 18,5кВт, 380В, IP20 ABA00013"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P30K-0060-A-T4-E20-B-H, 30кВт, 380В, IP20 ABC00033</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P37K-0075-A-T4-E20-N-H, 37кВт, 380В, IP20 ABC00034"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P18K-0038-T4-E20-B-H, 18,5кВт, 380В, IP20 ABA00013</h3>
+											<div class="card__price">52 688 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P37K-0075-A-T4-E20-N-H, 37кВт, 380В, IP20 ABC00034</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P45K-0090-A-T4-E20-N-H, 45кВт, 380В, IP20 ABC00035"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-51.jpg"
+													srcset="./img/products/vf-51@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-51-P22K-0045-T4-E20-B-H, 22кВт, 380В, IP20 ABA00014"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P45K-0090-A-T4-E20-N-H, 45кВт, 380В, IP20 ABC00035</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P55K-0110-A-T4-E20-N-H, 55кВт, 380В, IP20 ABC00036"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-51-P22K-0045-T4-E20-B-H, 22кВт, 380В, IP20 ABA00014</h3>
+											<div class="card__price">66 493 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P55K-0110-A-T4-E20-N-H, 55кВт, 380В, IP20 ABC00036</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P75K-0150-A-T4-E20-N-H, 75кВт, 380В, IP20 ABC00037"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/products/vf-51.jpg" srcset="./img/products/vf-51@2x.jpg 2x" alt="Мыщь Logitech G304" />
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P75K-0150-A-T4-E20-N-H, 75кВт, 380В, IP20 ABC00037</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P90K-0180-A-T4-E20-N-H, 90кВт, 380В, IP20 ABC00038"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">Мыщь Logitech G304</h3>
+											<div class="card__price">2 500 руб</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P90K-0180-A-T4-E20-N-H, 90кВт, 380В, IP20 ABC00038</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P110-0210-A-T4-E20-N-H, 110кВт, 380В, IP20 ABC00039"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-PK75-0003-A-T4-E20-B-H, 0,75кВт, 380В, IP20 ABC00023"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P110-0210-A-T4-E20-N-H, 110кВт, 380В, IP20 ABC00039</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P132-0250-A-T4-E20-N-H, 132кВт, 380В, IP20 ABC00040"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-PK75-0003-A-T4-E20-B-H, 0,75кВт, 380В, IP20 ABC00023</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P132-0250-A-T4-E20-N-H, 132кВт, 380В, IP20 ABC00040</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P160-0310-A-T4-E20-N-H-D, 160кВт, 380В, IP20 ABC00041"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P1K5-0004-A-T4-E20-B-H, 1,5кВт, 380В, IP20 ABC00024"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P160-0310-A-T4-E20-N-H-D, 160кВт, 380В, IP20 ABC00041</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P185-0340-A-T4-E20-N-H-D, 185кВт, 380В, IP20 ABC00042"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P1K5-0004-A-T4-E20-B-H, 1,5кВт, 380В, IP20 ABC00024</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P185-0340-A-T4-E20-N-H-D, 185кВт, 380В, IP20 ABC00042</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P200-0380-A-T4-E20-N-H-D, 200кВт, 380В, IP20 ABC00043"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P2K2-0006-A-T4-E20-B-H, 2,2кВт, 380В, IP20 ABC00025"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P200-0380-A-T4-E20-N-H-D, 200кВт, 380В, IP20 ABC00043</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P220-0415-A-T4-E20-N-H-D, 220кВт, 380В, IP20 ABC00044"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P2K2-0006-A-T4-E20-B-H, 2,2кВт, 380В, IP20 ABC00025</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P220-0415-A-T4-E20-N-H-D, 220кВт, 380В, IP20 ABC00044</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P250-0470-A-T4-E20-N-H-D, 250кВт, 380В, IP20 ABC00045"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P5K5-0013-A-T4-E20-B-H, 5,5кВт, 380В, IP20 ABC00027"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P250-0470-A-T4-E20-N-H-D, 250кВт, 380В, IP20 ABC00045</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P280-0510-A-T4-E20-N-H-D, 280кВт, 380В, IP20 ABC00046"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P5K5-0013-A-T4-E20-B-H, 5,5кВт, 380В, IP20 ABC00027</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P280-0510-A-T4-E20-N-H-D, 280кВт, 380В, IP20 ABC00046</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P315-0600-A-T4-E20-N-H-D, 315кВт, 380В, IP20 ABC00047"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P7K5-0017-A-T4-E20-B-H, 7,5кВт, 380В, IP20 ABC00028"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P315-0600-A-T4-E20-N-H-D, 315кВт, 380В, IP20 ABC00047</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P355-0670-A-T4-E20-N-H-D, 355кВт, 380В, IP20 ABC00048"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P7K5-0017-A-T4-E20-B-H, 7,5кВт, 380В, IP20 ABC00028</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P355-0670-A-T4-E20-N-H-D, 355кВт, 380В, IP20 ABC00048</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-								<article class="card">
-									<div class="card__picture">
-										<picture>
-											<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
-											<img
-												src="./img/products/vf-101.jpg"
-												srcset="./img/products/vf-101@2x.jpg 2x"
-												alt="VEDA VFD Преобразователь частоты VF-101-P400-0750-A-T4-E20-N-H-D, 400кВт, 380В, IP20 ABC00049"
-											/>
-										</picture>
-										<div class="card__btn">
-											<a href="price.html" class="btn">Купить</a>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P11K-0025-A-T4-E20-B-H, 11кВт, 380В, IP20 ABC00029"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
 										</div>
-									</div>
-									<div class="card__desc">
-										<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P400-0750-A-T4-E20-N-H-D, 400кВт, 380В, IP20 ABC00049</h3>
-										<div class="card__price">Цена по&#160;запросу</div>
-									</div>
-									<a href="#!" class="card__link"></a>
-								</article>
-							</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P11K-0025-A-T4-E20-B-H, 11кВт, 380В, IP20 ABC00029</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P15K-0032-A-T4-E20-B-H, 15кВт, 380В, IP20 ABC00030"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P15K-0032-A-T4-E20-B-H, 15кВт, 380В, IP20 ABC00030</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P18K-0038-A-T4-E20-B-H, 18кВт, 380В, IP20 ABC00031"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P18K-0038-A-T4-E20-B-H, 18кВт, 380В, IP20 ABC00031</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P22K-0045-A-T4-E20-B-H, 22кВт, 380В, IP20 ABC00032"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P22K-0045-A-T4-E20-B-H, 22кВт, 380В, IP20 ABC00032</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P30K-0060-A-T4-E20-B-H, 30кВт, 380В, IP20 ABC00033"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P30K-0060-A-T4-E20-B-H, 30кВт, 380В, IP20 ABC00033</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P37K-0075-A-T4-E20-N-H, 37кВт, 380В, IP20 ABC00034"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P37K-0075-A-T4-E20-N-H, 37кВт, 380В, IP20 ABC00034</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P45K-0090-A-T4-E20-N-H, 45кВт, 380В, IP20 ABC00035"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P45K-0090-A-T4-E20-N-H, 45кВт, 380В, IP20 ABC00035</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P55K-0110-A-T4-E20-N-H, 55кВт, 380В, IP20 ABC00036"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P55K-0110-A-T4-E20-N-H, 55кВт, 380В, IP20 ABC00036</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P75K-0150-A-T4-E20-N-H, 75кВт, 380В, IP20 ABC00037"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P75K-0150-A-T4-E20-N-H, 75кВт, 380В, IP20 ABC00037</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P90K-0180-A-T4-E20-N-H, 90кВт, 380В, IP20 ABC00038"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P90K-0180-A-T4-E20-N-H, 90кВт, 380В, IP20 ABC00038</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P110-0210-A-T4-E20-N-H, 110кВт, 380В, IP20 ABC00039"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P110-0210-A-T4-E20-N-H, 110кВт, 380В, IP20 ABC00039</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P132-0250-A-T4-E20-N-H, 132кВт, 380В, IP20 ABC00040"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P132-0250-A-T4-E20-N-H, 132кВт, 380В, IP20 ABC00040</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P160-0310-A-T4-E20-N-H-D, 160кВт, 380В, IP20 ABC00041"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P160-0310-A-T4-E20-N-H-D, 160кВт, 380В, IP20 ABC00041</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P185-0340-A-T4-E20-N-H-D, 185кВт, 380В, IP20 ABC00042"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P185-0340-A-T4-E20-N-H-D, 185кВт, 380В, IP20 ABC00042</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P200-0380-A-T4-E20-N-H-D, 200кВт, 380В, IP20 ABC00043"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P200-0380-A-T4-E20-N-H-D, 200кВт, 380В, IP20 ABC00043</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P220-0415-A-T4-E20-N-H-D, 220кВт, 380В, IP20 ABC00044"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P220-0415-A-T4-E20-N-H-D, 220кВт, 380В, IP20 ABC00044</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P250-0470-A-T4-E20-N-H-D, 250кВт, 380В, IP20 ABC00045"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P250-0470-A-T4-E20-N-H-D, 250кВт, 380В, IP20 ABC00045</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P280-0510-A-T4-E20-N-H-D, 280кВт, 380В, IP20 ABC00046"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P280-0510-A-T4-E20-N-H-D, 280кВт, 380В, IP20 ABC00046</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P315-0600-A-T4-E20-N-H-D, 315кВт, 380В, IP20 ABC00047"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P315-0600-A-T4-E20-N-H-D, 315кВт, 380В, IP20 ABC00047</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P355-0670-A-T4-E20-N-H-D, 355кВт, 380В, IP20 ABC00048"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P355-0670-A-T4-E20-N-H-D, 355кВт, 380В, IP20 ABC00048</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+								<li class="catalog-grid__item">
+									<article class="card">
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/products/vf-101.webp 1x, ./img/products/vf-101@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/products/vf-101.jpg 1x, ./img/products/vf-101@2x.jpg 2x" type="image/jpeg" />
+												<img
+													src="./img/products/vf-101.jpg"
+													srcset="./img/products/vf-101@2x.jpg 2x"
+													alt="VEDA VFD Преобразователь частоты VF-101-P400-0750-A-T4-E20-N-H-D, 400кВт, 380В, IP20 ABC00049"
+												/>
+											</picture>
+											<div class="card__btn">
+												<a href="price.html" class="btn">Купить</a>
+											</div>
+										</div>
+										<div class="card__desc">
+											<h3 class="card__title">VEDA VFD Преобразователь частоты VF-101-P400-0750-A-T4-E20-N-H-D, 400кВт, 380В, IP20 ABC00049</h3>
+											<div class="card__price">Цена по&#160;запросу</div>
+										</div>
+										<a href="#!" class="card__link"></a>
+									</article>
+								</li>
+							</ul>
 						</section>
 					</div>
 				</div>

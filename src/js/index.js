@@ -10,6 +10,9 @@ mobileNav();
 import catalogFilter from './modules/catalog-filter.js';
 catalogFilter();
 
+import catalogProps from './modules/catalog-props.js';
+catalogProps();
+
 // import timer from './modules/timer.js';
 // timer();
 
