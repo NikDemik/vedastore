@@ -16,35 +16,46 @@
 		href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
 		rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="shortcut icon" href="./img/favicons/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
-	<!-- Yandex.Metrika counter -->
 
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();
+		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+		k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(99066670, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/99066670" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
+	
+	<script src="//code.jivo.ru/widget/jKjM1ROTV8" async></script>
 </head>
 
 <body>
-	<!-- @@include('blocks/header.html') -->
-	<!-- @@include('blocks/tagline.html') -->
+	@@include('blocks/tagline.html')
 
 	@@include('blocks/header.html')
 	@@include('blocks/mobile-nav.html')
 
 	<main class="main">
-		@@include('blocks/hero.html')
-		@@include('blocks/features.html')
-		@@include('blocks/products-1.html')
-		@@include('blocks/products-2.html')
-		@@include('blocks/application.html')
-		@@include('blocks/docs.html')
-		@@include('blocks/about.html')
-		@@include('blocks/contact.html')
+		@@include('blocks/home/hero.html')
+		@@include('blocks/home/features.html')
+		@@include('blocks/home/products-1.html')
+		@@include('blocks/home/products-2.html')
+		@@include('blocks/home/application.html')
+		@@include('blocks/home/docs.html')
+		@@include('blocks/home/about.html')
+		@@include('blocks/home/contact.html')
 	</main>
 
-	<!-- @@include('blocks/collection.html') -->
-	<!-- @@include('blocks/bestseller.html') -->
-	<!-- @@include('blocks/promotion.html') -->
-	<!-- @@include('blocks/values.html') -->
-	<!-- @@include('blocks/newsletter.html') -->
 	@@include('blocks/footer.html')
 
 	<script src="./js/index.bundle.js"></script>

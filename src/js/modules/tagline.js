@@ -1,4 +1,4 @@
-function tagline (){
+async function tagline (){
     const closeTagLineBtn = document.querySelector('.tagline__close');
     const tagline = document.querySelector('.tagline');
     

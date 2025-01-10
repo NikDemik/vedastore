@@ -1,0 +1,32 @@
+.product-slider {
+    display: flex;
+}
+.product-slider__main {
+}
+.swiper-wrapper {
+}
+.swiper-slide {    
+}
+
+.product-img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-height: 720px;
+    overflow: hidden;
+
+    // img {
+    //     width: 640px;
+    //     height: 720px;
+    //     object-fit: cover;
+    // }
+}
+
+.product-slider__thumbs {
+}
+.product-slider__thumb {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}

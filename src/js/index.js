@@ -1,5 +1,5 @@
-// import tagline from './modules/tagline.js';
-// tagline();
+import tagline from './modules/tagline.js';
+tagline();
 
 import swiper from './modules/swiper.js';
 swiper();
@@ -12,6 +12,8 @@ catalogFilter();
 
 import catalogProps from './modules/catalog-props.js';
 catalogProps();
+
+
 
 // import timer from './modules/timer.js';
 // timer();

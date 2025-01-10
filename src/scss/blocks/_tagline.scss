@@ -1,0 +1,40 @@
+.tagline {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 40px;
+    color: var(--text-w);
+    font-size: 1rem;
+    background-color: #111;
+}
+
+.tagline__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        path {
+            stroke: var(--accent);
+        }
+    }
+}
+.tagline__close {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    svg {
+        fill: var(--text-w)
+    }
+}
+.tagline__link-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

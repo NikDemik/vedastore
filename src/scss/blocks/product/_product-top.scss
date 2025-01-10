@@ -1,0 +1,14 @@
+.product-top {
+    .container {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.product-top__left {
+    width: 50%;
+}
+
+.product-top__right {
+    width: 50%;
+}

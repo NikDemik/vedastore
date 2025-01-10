@@ -6,5 +6,6 @@ export default {
     $catalogFiltersTop: document.querySelectorAll('.catalog-filter__top'),
     $catalogFiltersItems: document.querySelectorAll('.catalog-filter__item'),
     $catalogColumns: document.querySelector('.catalog-columns__list'),
-    $catalogGridContent: document.querySelector('.catalog-grid__content'),    
+    $catalogGridContent: document.querySelector('.catalog-grid__content'),
+    // $closeTagLineBtn: document.querySelector('.tagline__close'),
 }
