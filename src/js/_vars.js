@@ -7,5 +7,7 @@ export default {
     $catalogFiltersItems: document.querySelectorAll('.catalog-filter__item'),
     $catalogColumns: document.querySelector('.catalog-columns__list'),
     $catalogGridContent: document.querySelector('.catalog-grid__content'),
-    // $closeTagLineBtn: document.querySelector('.tagline__close'),
+    $voltageSelect: document.querySelector('.voltage-select'),
+    $powerSelect: document.querySelector('.power-select'),
+    $stepper: document.querySelector('.stepper'),
 }

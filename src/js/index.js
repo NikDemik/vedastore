@@ -13,6 +13,12 @@ catalogFilter();
 import catalogProps from './modules/catalog-props.js';
 catalogProps();
 
+import productSelect from './modules/product-select.js';
+productSelect();
+
+import stepper from './modules/stepper.js';
+stepper();
+
 
 
 // import timer from './modules/timer.js';
@@ -27,4 +33,3 @@ catalogProps();
 // });
 
 // Мобильная навигация
-
