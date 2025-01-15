@@ -32,6 +32,17 @@
         letter-spacing: 0.03em;
         color: #3a3a3a;
     }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+
+        &--tocart {
+            background: #72aec8;
+        }
+    }
 }
 
 .info-price {
@@ -141,8 +152,14 @@
 }
 
 .info-stock {
+    span {
+        line-height: 138%;
+        letter-spacing: 0.03em;
+        color: #3a3a3a;
+    }
+
     &__text {
-        margin-right: 10px;
+        margin-right: 6px;
     }
 }
 
@@ -184,5 +201,18 @@
         line-height: 138%;
         letter-spacing: 0.03em;
         color: #3a3a3a
+    }
+}
+
+.info-sku {
+    span {
+        line-height: 138%;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        color: #3a3a3a;
+    }
+
+    &__name {
+        margin-right: 6px;
     }
 }

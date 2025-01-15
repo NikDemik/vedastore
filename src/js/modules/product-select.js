@@ -1,7 +1,7 @@
 import vars from '../_vars';
 
 function productSelect () {
-    if (document.querySelector('.product')) {
+    if (document.querySelector('.product-info__select')) {
         vars.$voltageSelect.addEventListener('click', (e) => {
             if (e.target.classList.contains('voltage-select__btn')) {
                 
