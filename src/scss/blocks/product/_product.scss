@@ -1,3 +1,6 @@
 .product-content {
-    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding: 120px 0 100px 0;
 }
