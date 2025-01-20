@@ -1,5 +1,4 @@
 .product-description {
-    
     &__title {
         margin-bottom: 30px;
         border-bottom: 1px solid #cdcdcd;
@@ -28,7 +27,7 @@
             transition: color 0.3s;
         }
 
-        &--active{
+        &--active {
             color: var(--accent);
             transition: color 0.3s;
         }

@@ -29,64 +29,7 @@
             </div>
         </div>
         <div class="product-top__right">
-            <div class="product-info">
-                <h3 class="product-info__title">Преобразователь частоты VEDA серии VF-51</h3>
-
-                <div class="product-info__price info-price">
-                    <div class="info-price__current">19 539 руб</div>
-                    <div class="info-price__old">21 710 руб</div>
-                </div>
-
-                <p class="product-info__descr">
-                    Преобразователь частоты VF-51 – устройство, которое применяется для управления насосами, вентиляторами, а также для автоматизирования технологических процессов. Его функционал позволяет работать как при напряжении питания в 1х220В, так и 3х380В, обладая диапазоном от 0,75 до 22 кВт. Для интеграции в сетевую инфраструктуру VF-51 оснащен встроенным интерфейсом RS-485.
-                </p>
-
-                <!-- Block Select Parametrs -->
-                <!-- <div class="product-info__select voltage-select">
-                    <span class="voltage-select__selected">Выберите напряжение (В)</span>
-                    <ul class="voltage-select__list">
-                        <li class="voltage-select__item"><button class="voltage-select__btn btn-reset voltage-select__btn--active">220</button></li>
-                        <li class="voltage-select__item"><button class="voltage-select__btn btn-reset">380</button></li>
-                    </ul>
-                </div>
-
-                <div class="product-info__select power-select">
-                    <span class="power-select__selected">Выберите мощность (кВт)</span>
-                    <ul class="power-select__list">
-                        <li class="power-select__item"><button class="power-select__btn btn-reset" aria-label="Мощность 0,75 кВт">0,75</button></li>
-                        <li class="power-select__item"><button class="power-select__btn btn-reset" aria-label="Мощность 1,5 кВт">1,5</button></li>
-                        <li class="power-select__item"><button class="power-select__btn btn-reset" aria-label="Мощность 2,2 кВт">2,2</button></li>
-                        <li class="power-select__item"><button class="power-select__btn btn-reset" aria-label="Мощность 4 кВт">4</button></li>
-                        <li class="power-select__item"><button class="power-select__btn btn-reset" aria-label="Мощность 5,5 кВт">5,5</button></li>
-                        <li class="power-select__item"><button class="power-select__btn btn-reset" aria-label="Мощность 7.5 кВт">7,5</button></li>
-                        <li class="power-select__item"><button class="power-select__btn btn-reset" aria-label="Мощность 11 кВт">11</button></li>
-                        <li class="power-select__item"><button class="power-select__btn btn-reset" aria-label="Мощность 15 кВт">15</button></li>
-                        <li class="power-select__item"><button class="power-select__btn btn-reset" aria-label="Мощность 18,5 кВт">18,5</button></li>
-                        <li class="power-select__item"><button class="power-select__btn btn-reset" aria-label="Мощность 22 кВт">22</button></li>
-                    </ul>
-                </div> -->
-
-                <div class="product-info__stock info-stock">
-                    <span class="info-stock__text">В наличии:</span>
-                    <span class="info-stock__quantity">10 шт.</span>
-                </div>
-
-                <div class="product-info__stepper stepper">
-                    <button class="btn-reset stepper__btn stepper__btn--minus" aria-label="минус" disabled>-</button>
-                    <input type="text" class="stepper__input" value="1" maxlength="3">
-                    <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="плюс">+</button>
-                </div>
-
-                <div class="product-info__btn">
-                    <button class="product-info__btn--tocart btn">В корзину</button>
-                    <a href="price.html" class="product-info__btn--buynow btn">Купить сейчас</a>
-                </div>
-
-                <div class="product-info__sku info-sku">
-                    <span class="info-sku__name">Артикул:</span>
-                    <span class="info-sku__text">ABA00006</span>
-                </div>
-            </div>
+            @@loop('product-info.html', './data/vf-51.json')
         </div>
     </div>
 </div>

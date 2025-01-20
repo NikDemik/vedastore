@@ -14,10 +14,14 @@
 }
 
 .product-info {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+
+    &--visible {
+        display: flex;
+    }
 
     &__title {
         font-family: var(--font-jost);
@@ -74,11 +78,9 @@
     }
 
     &__list {
-        
         display: flex;
         align-items: center;
         justify-content: flex-start;
-
     }
 
     &__item {
@@ -87,7 +89,7 @@
         letter-spacing: 0.03em;
         color: #3a3a3a;
         transition: color 0.3s;
-        
+
         &:not(:last-child) {
             margin-right: 20px;
         }
@@ -119,11 +121,9 @@
     }
 
     &__list {
-        
         display: flex;
         align-items: center;
         justify-content: flex-start;
-
     }
 
     &__item {
@@ -132,7 +132,7 @@
         letter-spacing: 0.03em;
         color: #3a3a3a;
         transition: color 0.3s;
-        
+
         &:not(:last-child) {
             margin-right: 20px;
         }
@@ -200,7 +200,7 @@
         text-align: center;
         line-height: 138%;
         letter-spacing: 0.03em;
-        color: #3a3a3a
+        color: #3a3a3a;
     }
 }
 

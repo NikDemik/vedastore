@@ -10,4 +10,6 @@ export default {
     $voltageSelect: document.querySelector('.voltage-select'),
     $powerSelect: document.querySelector('.power-select'),
     $stepper: document.querySelector('.stepper'),
-}
+    $cardLink: document.querySelectorAll('.card__link'),
+    $productInfo: document.querySelectorAll('.product-info'),
+};
