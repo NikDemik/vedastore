@@ -2,16 +2,27 @@ import vars from '../_vars';
 
 function catalogInfo() {
     if (document.querySelector('.product-info')) {
-        vars.$productInfo.forEach((el) => {
-            let prodId = el.getAttribute('data-id');
+        let url = new URL(window.location.href);
+        const urlId = url.searchParams.get('id');
+        const data = require('../../html/data/vf-51.json');
 
-            if (prodId === localStorage.getItem('data-id')) {
-                console.log(prodId);
-                el.classList.add('product-info--visible');
-            } else {
-                el.remove();
+        if (typeof data === 'object' && data !== null) {
+            for (const key in data) {
+                // console.log(`Key: ${key}`);
+                if (data[key].id === urlId) {
+                    vars.$productInfo.forEach((el) => {
+                        el.querySelector('.product-info__title').innerHTML = data[key].title;
+                        el.querySelector('.info-price__current').innerHTML = data[key].price;
+                        el.querySelector('.info-price__old').innerHTML = data[key].price_old;
+                        el.querySelector('.info-stock__quantity').innerHTML = data[key].stock;
+                        el.querySelector('.info-sku__text').innerHTML = data[key].id;
+                    });
+                }
+                // iterateJSON(data[key]); // Идем дальше!
             }
-        });
+        } else {
+            console.log(`Value: ${data}`);
+        }
     }
 }
 

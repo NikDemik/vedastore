@@ -20,15 +20,6 @@ function catalogProps() {
                 vars.$catalogGridContent.dataset.gridColumns = columns;
             }
         });
-
-        //Сохраняем data-id карточки в localStorage
-        vars.$cardLink.forEach((el) => {
-            el.addEventListener('click', (e) => {
-                let id = e.target.getAttribute('data-id');
-                localStorage.setItem('data-id', id);
-                console.log('localStorage:', localStorage.getItem('data-id'));
-            });
-        });
     }
 }
 

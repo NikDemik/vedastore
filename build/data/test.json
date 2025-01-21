@@ -1,0 +1,32 @@
+{
+    "ABA00005": {
+        "id": "ABA00005",
+        "img": "vf-51",
+        "title": "VEDA VFD Преобразователь частоты VF-51-PK75-0003-T4-E20-B-H, 0,75кВт, 380В, IP20 ABA00005",
+        "price": "17 533 руб",
+        "price-old": " руб",
+        "stock": "",
+        "power": " кВт",
+        "voltage": " В",
+        "tok": " А",
+        "weight": " кг",
+        "height": " мм",
+        "widht": " мм",
+        "length": " мм"
+    },
+    "ABA00006": {
+        "id": "ABA00006",
+        "img": "vf-101",
+        "title": "VEDA VFD Преобразователь частоты VF-51-P1K5-0004-T4-E20-B-H, 1,5кВт, 380В, IP20 ABA00006",
+        "price": "21 710 руб",
+        "price-old": " руб",
+        "stock": "",
+        "power": " кВт",
+        "voltage": " В",
+        "tok": " А",
+        "weight": " кг",
+        "height": " мм",
+        "widht": " мм",
+        "length": " мм"
+    }
+}

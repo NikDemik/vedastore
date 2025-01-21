@@ -13,6 +13,9 @@ catalogFilter();
 import catalogProps from './modules/catalog-props.js';
 catalogProps();
 
+import cardLink from './modules/card-link.js';
+cardLink();
+
 import productInfo from './modules/product-info.js';
 productInfo();
 
