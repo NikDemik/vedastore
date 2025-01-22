@@ -1,6 +1,6 @@
 import vars from '../_vars';
 
-function catalogInfo() {
+async function catalogInfo() {
     if (document.querySelector('.product-info')) {
         let url = new URL(window.location.href);
         const urlId = url.searchParams.get('id');

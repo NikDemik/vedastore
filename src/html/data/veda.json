@@ -1,7 +1,7 @@
 [
     {
         "id": "ABA00002",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-PK75-0004-S2-E20-B-H, 0,75кВт, 220В, IP20 ABA00002",
         "price": "13 751 руб",
         "price_old": "16 501 руб",
@@ -16,7 +16,7 @@
     },
     {
         "id": "ABA00003",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P1K5-0007-S2-E20-B-H, 1,5кВт, 220В, IP20 ABA00003",
         "price": "16 246 руб",
         "price_old": "19 495 руб",
@@ -31,7 +31,7 @@
     },
     {
         "id": "ABA00004",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P2K2-0010-S2-E20-B-H, 2,2кВт, 220В, IP20 ABA00004",
         "price": "19 858 руб",
         "price_old": "23 830 руб",
@@ -46,7 +46,7 @@
     },
     {
         "id": "ABA00005",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-PK75-0003-T4-E20-B-H, 0,75кВт, 380В, IP20 ABA00005",
         "price": "17 533 руб",
         "price_old": "21 039 руб",
@@ -61,7 +61,7 @@
     },
     {
         "id": "ABA00006",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P1K5-0004-T4-E20-B-H, 1,5кВт, 380В, IP20 ABA00006",
         "price": "21 710 руб",
         "price_old": "26 052 руб",
@@ -76,7 +76,7 @@
     },
     {
         "id": "ABA00007",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P2K2-0005-T4-E20-B-H, 2,2кВт, 380В, IP20 ABA00007",
         "price": "26 542 руб",
         "price_old": "31 850 руб",
@@ -91,7 +91,7 @@
     },
     {
         "id": "ABA00008",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P4K0-0009-T4-E20-B-H, 4кВт, 380В, IP20 ABA00008",
         "price": "30 234 руб",
         "price_old": "36 280 руб",
@@ -106,7 +106,7 @@
     },
     {
         "id": "ABA00009",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P5K5-0013-T4-E20-B-H, 5,5кВт, 380В, IP20 ABA00009",
         "price": "35 245 руб",
         "price_old": "42 293 руб",
@@ -121,7 +121,7 @@
     },
     {
         "id": "ABA00010",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P7K5-0017-T4-E20-B-H, 7,5кВт, 380В, IP20 ABA00010",
         "price": "40 025 руб",
         "price_old": "48 030 руб",
@@ -136,7 +136,7 @@
     },
     {
         "id": "ABA00011",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P11K-0025-T4-E20-B-H, 11кВт, 380В, IP20 ABA00011",
         "price": "57 574 руб",
         "price_old": "69 088 руб",
@@ -151,7 +151,7 @@
     },
     {
         "id": "ABA00012",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P15K-0032-T4-E20-B-H, 15кВт, 380В, IP20 ABA00012",
         "price": "66 537 руб",
         "price_old": "79 844 руб",
@@ -166,7 +166,7 @@
     },
     {
         "id": "ABA00013",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P18K-0038-T4-E20-B-H, 18,5кВт, 380В, IP20 ABA00013",
         "price": "82 293 руб",
         "price_old": "98 752 руб",
@@ -181,7 +181,7 @@
     },
     {
         "id": "ABA00014",
-        "img": "/img/products/vf-51.jpg",
+        "img": "./img/products/vf-51.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-51-P22K-0045-T4-E20-B-H, 22кВт, 380В, IP20 ABA00014",
         "price": "96 708 руб",
         "price_old": "116 049 руб",
@@ -196,7 +196,7 @@
     },
     {
         "id": "ABС00023",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-PK75-0003-A-T4-E20-B-H, 0,75кВт, 380В, IP20 ABC00023",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -211,7 +211,7 @@
     },
     {
         "id": "ABС00024",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P1K5-0004-A-T4-E20-B-H, 1,5кВт, 380В, IP20 ABC00024",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -226,7 +226,7 @@
     },
     {
         "id": "ABС00025",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P2K2-0006-A-T4-E20-B-H, 2,2кВт, 380В, IP20 ABC00025",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -241,7 +241,7 @@
     },
     {
         "id": "ABС00027",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P5K5-0013-A-T4-E20-B-H, 5,5кВт, 380В, IP20 ABC00027",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -256,7 +256,7 @@
     },
     {
         "id": "ABС00028",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P7K5-0017-A-T4-E20-B-H, 7,5кВт, 380В, IP20 ABC00028",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -271,7 +271,7 @@
     },
     {
         "id": "ABС00029",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P11K-0025-A-T4-E20-B-H, 11кВт, 380В, IP20 ABC00029",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -286,7 +286,7 @@
     },
     {
         "id": "ABС00030",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P15K-0032-A-T4-E20-B-H, 15кВт, 380В, IP20 ABC00030",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -301,7 +301,7 @@
     },
     {
         "id": "ABС00031",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P18K-0038-A-T4-E20-B-H, 18кВт, 380В, IP20 ABC00031",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -316,7 +316,7 @@
     },
     {
         "id": "ABС00032",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P22K-0045-A-T4-E20-B-H, 22кВт, 380В, IP20 ABC00032",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -331,7 +331,7 @@
     },
     {
         "id": "ABС00033",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P30K-0060-A-T4-E20-B-H, 30кВт, 380В, IP20 ABC00033",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -346,7 +346,7 @@
     },
     {
         "id": "ABС00034",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P37K-0075-A-T4-E20-N-H, 37кВт, 380В, IP20 ABC00034",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -361,7 +361,7 @@
     },
     {
         "id": "ABС00035",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P45K-0090-A-T4-E20-N-H, 45кВт, 380В, IP20 ABC00035",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -376,7 +376,7 @@
     },
     {
         "id": "ABС00036",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P55K-0110-A-T4-E20-N-H, 55кВт, 380В, IP20 ABC00036",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -391,7 +391,7 @@
     },
     {
         "id": "ABС00037",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P75K-0150-A-T4-E20-N-H, 75кВт, 380В, IP20 ABC00037",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -406,7 +406,7 @@
     },
     {
         "id": "ABС00038",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P90K-0180-A-T4-E20-N-H, 90кВт, 380В, IP20 ABC00038",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -421,7 +421,7 @@
     },
     {
         "id": "ABС00039",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P110-0210-A-T4-E20-N-H, 110кВт, 380В, IP20 ABC00039",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -436,7 +436,7 @@
     },
     {
         "id": "ABС00040",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P132-0250-A-T4-E20-N-H, 132кВт, 380В, IP20 ABC00040",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -451,7 +451,7 @@
     },
     {
         "id": "ABС00041",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P160-0310-A-T4-E20-N-H-D, 160кВт, 380В, IP20 ABC00041",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -466,7 +466,7 @@
     },
     {
         "id": "ABС00042",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P185-0340-A-T4-E20-N-H-D, 185кВт, 380В, IP20 ABC00042",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -481,7 +481,7 @@
     },
     {
         "id": "ABС00043",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P200-0380-A-T4-E20-N-H-D, 200кВт, 380В, IP20 ABC00043",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -496,7 +496,7 @@
     },
     {
         "id": "ABС00044",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P220-0415-A-T4-E20-N-H-D, 220кВт, 380В, IP20 ABC00044",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -511,7 +511,7 @@
     },
     {
         "id": "ABС00045",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P250-0470-A-T4-E20-N-H-D, 250кВт, 380В, IP20 ABC00045",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -526,7 +526,7 @@
     },
     {
         "id": "ABС00046",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P280-0510-A-T4-E20-N-H-D, 280кВт, 380В, IP20 ABC00046",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -541,7 +541,7 @@
     },
     {
         "id": "ABС00047",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P315-0600-A-T4-E20-N-H-D, 315кВт, 380В, IP20 ABC00047",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -556,7 +556,7 @@
     },
     {
         "id": "ABС00048",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P355-0670-A-T4-E20-N-H-D, 355кВт, 380В, IP20 ABC00048",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -571,7 +571,7 @@
     },
     {
         "id": "ABС00049",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P400-0750-A-T4-E20-N-H-D, 400кВт, 380В, IP20 ABC00049",
         "price": "Цена по запросу",
         "stock": "по запросу",
@@ -586,7 +586,7 @@
     },
     {
         "id": "ABС00050",
-        "img": "/img/products/vf-101.jpg",
+        "img": "./img/products/vf-101.jpg",
         "title": "VEDA VFD Преобразователь частоты VF-101-P450-0810-A-T4-E20-N-H-D, 450кВт, 380В, IP20 ABC00050",
         "price": "Цена по запросу",
         "stock": "по запросу",
