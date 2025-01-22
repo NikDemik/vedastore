@@ -12,4 +12,7 @@ export default {
     $stepper: document.querySelector('.stepper'),
     $cardLink: document.querySelectorAll('.card__link'),
     $productInfo: document.querySelectorAll('.product-info'),
+    $productImg: document.querySelectorAll('.product-img'),
+    $productImgId: document.getElementById('product-img'),
+    $productParam: document.querySelectorAll('.product-param'),
 };

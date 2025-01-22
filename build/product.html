@@ -187,11 +187,7 @@
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
 												<div class="product-img">
-													<picture>
-														<source srcset="./img/products/vf-51.webp 1x, ./img/products/vf-51@2x.webp 2x" type="image/webp" />
-														<source srcset="./img/products/vf-51.jpg 1x, ./img/products/vf-51@2x.jpg 2x" type="image/jpeg" />
-														<img src="./img/products/vf-51.jpg" alt="VF-51" />
-													</picture>
+													<img id="product-img" src="" alt="Изображение товара" />
 												</div>
 											</div>
 										</div>
@@ -282,7 +278,7 @@
 									</div>
 
 									<div class="product-info__btn">
-										<button class="product-info__btn--tocart btn">В&#160;корзину</button>
+										<!-- <button class="product-info__btn--tocart btn">В корзину</button> -->
 										<a href="price.html" class="product-info__btn--buynow btn">Купить сейчас</a>
 									</div>
 
@@ -300,19 +296,43 @@
 								<div class="product-description__title">
 									<ul class="product-description__nav">
 										<li class="product-description__item product-description__item--active">
-											<a href="#one" class="product-description__link">Характеристики</a>
+											<a href="#one" class="product-description__link product-description__link--active">Характеристики</a>
 										</li>
 										<li class="product-description__item"><a href="#two" class="product-description__link">Документация</a></li>
 										<li class="product-description__item"><a href="#three" class="product-description__link">Опции</a></li>
 									</ul>
 								</div>
 								<div class="product-description__content product-description__content--active" data-target="#one">
-									<p>
-										Преобразователь частоты VF-51&#160;&#8212; устройство, которое применяется для управления насосами, вентиляторами, а&#160;также для
-										автоматизирования технологических процессов. Его функционал позволяет работать как при напряжении питания в&#160;1&#215;220В, так
-										и&#160;3&#215;380В, обладая диапазоном от&#160;0,75 до&#160;22 кВт. Для интеграции в&#160;сетевую инфраструктуру VF-51 оснащен встроенным
-										интерфейсом RS-485.
-									</p>
+									<ul class="product-param parameters">
+										<li class="parameters__item">
+											<p>Входное напряжение:</p>
+											<span class="param__voltage"></span>
+										</li>
+										<li class="parameters__item">
+											<p>Выходная мощность:</p>
+											<span class="param__power"></span>
+										</li>
+										<li class="parameters__item">
+											<p>Номинальный выходной ток:</p>
+											<span class="param__tok"></span>
+										</li>
+										<li class="parameters__item">
+											<p>Масса:</p>
+											<span class="param__weight"></span>
+										</li>
+										<li class="parameters__item">
+											<p>Высота:</p>
+											<span class="param__height"></span>
+										</li>
+										<li class="parameters__item">
+											<p>Ширина:</p>
+											<span class="param__widht"></span>
+										</li>
+										<li class="parameters__item">
+											<p>Длина:</p>
+											<span class="param__lenght"></span>
+										</li>
+									</ul>
 								</div>
 								<div class="product-description__content" data-target="#two">
 									<p>

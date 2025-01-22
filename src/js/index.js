@@ -19,6 +19,9 @@ cardLink();
 import productInfo from './modules/product-info.js';
 productInfo();
 
+import productParam from './modules/product-param.js';
+productParam();
+
 import productSelect from './modules/product-select.js';
 productSelect();
 
