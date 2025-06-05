@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .breadcrumbs__list {
@@ -20,12 +21,11 @@
 .breadcrumbs__item {
     position: relative;
 
-
     &:not(:last-child) {
         margin-right: 30px;
 
         &::after {
-            content: ">";
+            content: '>';
             position: absolute;
             right: -20px;
             top: 45%;

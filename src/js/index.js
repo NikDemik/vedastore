@@ -28,6 +28,9 @@ productSelect();
 import stepper from './modules/stepper.js';
 stepper();
 
+import checkCookies from './modules/cookie.js';
+checkCookies();
+
 // import timer from './modules/timer.js';
 // timer();
 
