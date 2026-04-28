@@ -150,37 +150,3 @@
         order: -1;
     }
 }
-
-// Куки
-
-#cookie_notification {
-    display: none;
-    position: fixed;
-    bottom: 25px;
-    right: 50%;
-    transform: translateX(50%);
-    width: calc(100% - 60px);
-    max-width: 1300px;
-    padding: 15px;
-    background: #fff;
-    box-shadow: 1px 1px 1300px #000;
-    z-index: 1000;
-}
-
-.cookie_text {
-    color: #000;
-    margin: 0;
-    font-size: 1rem;
-    text-align: center;
-}
-.cookie_text a {
-    color: var(--accent);
-}
-
-#cookie_notification.show {
-    display: block;
-}
-
-.cookie_accept {
-    margin-top: 40px;
-}

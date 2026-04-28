@@ -17,33 +17,37 @@
 		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
 		<link rel="shortcut icon" href="./img/favicons/favicon.ico" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
-
 		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript">
-			(function(m, e, t, r, i, k, a) {
-				m[i] =
-					m[i] ||
-					function() {
-						(m[i].a = m[i].a || []).push(arguments);
-					};
-				m[i].l = 1 * new Date();
-				for (var j = 0; j < document.scripts.length; j++) {
-					if (document.scripts[j].src === r) {
-						return;
-					}
-				}
-				(k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
-			})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		<script>
+			let ymLoaded = false;
 
-			ym(99066670, "init", {
-				clickmap: true,
-				trackLinks: true,
-				accurateTrackBounce: true,
-			});
+			function loadYandexMetrika() {
+				if (ymLoaded) return;
+				ymLoaded = true;
+
+				(function(m, e, t, r, i, k, a) {
+					m[i] =
+						m[i] ||
+						function() {
+							(m[i].a = m[i].a || []).push(arguments);
+						};
+					m[i].l = 1 * new Date();
+					for (var j = 0; j < document.scripts.length; j++) {
+						if (document.scripts[j].src === r) {
+							return;
+						}
+					}
+					(k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+				})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+				ym(99066670, "init", {
+					clickmap: true,
+					trackLinks: true,
+					accurateTrackBounce: true,
+					webvisor: false,
+				});
+			}
 		</script>
-		<noscript
-			><div><img src="https://mc.yandex.ru/watch/99066670" style="position:absolute; left:-9999px;" alt="" /></div
-		></noscript>
 		<!-- /Yandex.Metrika counter -->
 
 		<script src="//code.jivo.ru/widget/jKjM1ROTV8" async></script>
@@ -693,6 +697,9 @@
 						<p class="footer__copyrights-links">
 							<a href="user-agreement.html">Политика конфиденциальности</a>
 							<a href="user-personal.html">Согласие на&#160;обработку персональных данных</a>
+							<a href="#" onclick="localStorage.removeItem('cookie_consent_152fz'); location.reload();" class="cookie-link">
+								Изменить настройки cookie
+							</a>
 							<a href="#!">05-06-25</a>
 						</p>
 					</div>
@@ -702,22 +709,6 @@
 				<a href="#!"><img src="./img/icons/facebook.svg" alt=""></a>
 				<a href="#!"><img src="./img/icons/youtube.svg" alt=""></a>
 			</div> -->
-				</div>
-
-				<div id="cookie_notification">
-					<div class="cookie_text">
-						<p>
-							Этот веб-сайт использует файлы cookie, чтобы предоставить вам лучший пользовательский опыт. Вы&#160;можете ознакомиться с&#160;<a
-								href="user-agreement.html"
-								>Политикой использования файлов Cookie</a
-							>
-							и&#160;<a href="user-personal.html">Политикой в&#160;области обработки и&#160;защиты персональных данных</a>, в которых объясняется, как
-							мы&#160;обрабатываем ваши личные данные. Продолжая работать на&#160;нашем сайте, вы&#160;подтверждаете свое согласие на использование всех файлов cookie.
-							Нажмите кнопку &#171;Разрешить все Cookie&#187;, чтобы скрыть это сообщение. Обратите внимание, что вы&#160;можете отозвать свое согласие в&#160;любое
-							время.
-						</p>
-					</div>
-					<div class="btn btn-light cookie_accept">Разрешить все Cookie</div>
 				</div>
 			</div>
 		</footer>

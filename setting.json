@@ -1,0 +1,52 @@
+{
+    "files.associations": {
+        "*.py": "python",
+        ".html": "html",
+        ".xml": "html",
+        "*.js": "javascriptreact",
+        "*.prisma": "prisma"
+        // "*.html": "javascriptreact"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "editor.largeFileOptimizations": false,
+    "emmet.includeLanguages": {
+        "html": "html",
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact"
+    },
+    "[twig]": {
+        "editor.defaultFormatter": "mblode.twig-language-2"
+    },
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+
+    "php.validate.executablePath": "C:/OSPanel/modules/php/PHP_8.0/php.exe",
+
+    "workbench.editorAssociations": {
+        "*.pdf": "default"
+    },
+    "workbench.settings.applyToAllProfiles": [],
+
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Operator Mono Dark Modern Theme",
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+
+    // Настройки Prettier
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "prettier.semi": true,
+    "prettier.printWidth": 100,
+
+    // Prisma
+    "prisma.showPrismaDataPlatformNotification": false
+}

@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const fileInclude = require('gulp-file-include');
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
-const server = require('gulp-server-livereload');
+const browserSync = require('browser-sync');
 const clean = require('gulp-clean');
 const fs = require('fs');
 const sourceMaps = require('gulp-sourcemaps');
@@ -19,6 +19,7 @@ const webpHTML = require('gulp-webp-retina-html');
 const imageminWebp = require('imagemin-webp');
 const rename = require('gulp-rename');
 const prettier = require('@bdchauvette/gulp-prettier');
+const bs = browserSync.create();
 
 
 gulp.task('clean:dev', function (done) {
@@ -107,7 +108,8 @@ gulp.task('sass:dev', function () {
 			)
 		)
 		.pipe(sourceMaps.write())
-		.pipe(gulp.dest('./build/css/'));
+		.pipe(gulp.dest('./build/css/'))
+		.pipe(bs.stream());
 });
 
 gulp.task('images:dev', function () {
@@ -206,13 +208,18 @@ gulp.task('js:dev', function () {
 		.pipe(gulp.dest('./build/js/'));
 });
 
-const serverOptions = {
-	livereload: true,
-	open: true,
-};
-
-gulp.task('server:dev', function () {
-	return gulp.src('./build/').pipe(server(serverOptions));
+gulp.task('server:dev', function (done) {
+	bs.init({
+		server: {
+			baseDir: './build/',
+		},
+		open: true,
+		notify: false,
+		ui: false,
+		ghostMode: false,
+		port: 8000,
+	});
+	done();
 });
 
 gulp.task('watch:dev', function () {
@@ -220,12 +227,12 @@ gulp.task('watch:dev', function () {
 	gulp.watch(
 		['./src/html/**/*.html', './src/html/**/*.json'],
 		gulp.parallel('html:dev')
-	);
-	gulp.watch('./src/img/**/*', gulp.parallel('images:dev'));
-	gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));
-	gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'));
+	).on('change', bs.reload);
+	gulp.watch('./src/img/**/*', gulp.parallel('images:dev')).on('change', bs.reload);
+	gulp.watch('./src/files/**/*', gulp.parallel('files:dev')).on('change', bs.reload);
+	gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev')).on('change', bs.reload);
 	gulp.watch(
 		'./src/img/svgicons/*',
 		gulp.series('svgStack:dev', 'svgSymbol:dev')
-	);
+	).on('change', bs.reload);
 });

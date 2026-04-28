@@ -14,7 +14,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const csso = require('gulp-csso');
 // const webImagesCSS = require('gulp-web-images-css');  //Вывод WEBP-изображений
 
-const server = require('gulp-server-livereload');
+const browserSync = require('browser-sync');
 const clean = require('gulp-clean');
 const fs = require('fs');
 const sourceMaps = require('gulp-sourcemaps');
@@ -24,6 +24,7 @@ const notify = require('gulp-notify');
 const webpack = require('webpack-stream');
 const babel = require('gulp-babel');
 const changed = require('gulp-changed');
+const bs = browserSync.create();
 
 // Images
 const imagemin = require('gulp-imagemin');
@@ -222,11 +223,16 @@ gulp.task('js:docs', function () {
 		.pipe(gulp.dest('./docs/js/'));
 });
 
-const serverOptions = {
-	livereload: true,
-	open: true,
-};
-
-gulp.task('server:docs', function () {
-	return gulp.src('./docs/').pipe(server(serverOptions));
+gulp.task('server:docs', function (done) {
+	bs.init({
+		server: {
+			baseDir: './docs/',
+		},
+		open: true,
+		notify: false,
+		ui: false,
+		ghostMode: false,
+		port: 8000,
+	});
+	done();
 });

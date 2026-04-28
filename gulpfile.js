@@ -7,12 +7,22 @@ require('./gulp/fontsDev.js');
 require('./gulp/fontsDocs.js');
 
 gulp.task(
-	'default',
-	gulp.series(
-		'clean:dev', 'fontsDev',
-		gulp.parallel('html:dev', 'sass:dev', 'images:dev', gulp.series('svgStack:dev', 'svgSymbol:dev'), 'files:dev', 'js:dev'),
-		gulp.parallel('server:dev', 'watch:dev')
-	)
+    'default',
+    gulp.series(
+        'clean:dev',
+        'fontsDev',
+        gulp.parallel(
+            'html:dev',
+            'sass:dev',
+            'images:dev',
+            gulp.series('svgStack:dev', 'svgSymbol:dev'),
+            'files:dev',
+            'js:dev',
+        ),
+        // 'watch:dev', // сначала watch
+        // 'server:dev', // потом server
+        gulp.parallel('server:dev', 'watch:dev')
+    ),
 );
 
 gulp.task(
